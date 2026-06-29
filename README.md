@@ -56,10 +56,6 @@ Sari-Sari Store/
 ├── index.html          Page layout and structure
 ├── style.css           All visual styling (flat design, Flexbox)
 ├── app.js              All JavaScript logic (no frameworks)
-└── tutorial/
-    ├── indextutorial.html    HTML file with beginner explanations
-    ├── styletutorial.css     CSS file with beginner explanations
-    └── apptutorial.js        JS file with beginner explanations
 ```
 
 ---
