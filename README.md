@@ -1,7 +1,9 @@
 # Smart Inventory Restocking System
 **Sari-Sari Store ni Badong**
 
-A school project web app for managing inventory in a Filipino Sari-Sari convenience store. Products are organized into zones using drag-and-drop, with automatic low-stock alerts and full localStorage persistence.
+An inventory restocking system made by students of **Holy Trinity University** for their **Event Driven Programming** class.
+
+A web app for managing inventory in a Filipino Sari-Sari convenience store. Products are organized into zones using drag-and-drop, with automatic low-stock alerts and full localStorage persistence.
 
 ---
 
@@ -83,9 +85,3 @@ All data is stored in the browser's `localStorage`. There is no backend or datab
 - **CSS3** — Flexbox layout, pseudo-elements, transitions
 - **Vanilla JavaScript** — no frameworks, no libraries
 - **localStorage** — browser-side data persistence
-
----
-
-## Built For
-
-A school project in Systems Analysis and Design. The app is based on a Level 1 Data Flow Diagram (DFD) and is built entirely with plain HTML, CSS, and JavaScript — no build tools, no npm, no frameworks.
