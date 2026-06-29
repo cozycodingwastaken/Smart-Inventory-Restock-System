@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Smart Inventory Restocking System</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- =============================================
+       HEADER
+       Green bar at the top. Title on the left,
+       Add Product button on the right.
+       ============================================= -->
+  <header>
+    <div class="header-inner">
+      <h1>Sari-Sari Store ni Badong</h1>
+      <button class="btn-add" id="btn-add-product">+ Add Product</button>
+    </div>
+  </header>
+
+  <!-- =============================================
+       MAIN CONTENT
+       Three zone sections stacked on top of each
+       other. Below them are the Restock and
+       Delete drop targets.
+       ============================================= -->
+  <main>
+
+    <!-- Zone 1: Storage -->
+    <section class="zone-section" id="zone-storage">
+      <div class="zone-banner storage-banner">
+        <span class="zone-label">Storage</span>
+        <span class="zone-count" id="count-storage">0</span>
+      </div>
+      <div class="zone-cards" data-zone="storage"></div>
+    </section>
+
+    <!-- Zone 2: Shelf -->
+    <section class="zone-section" id="zone-shelf">
+      <div class="zone-banner shelf-banner">
+        <span class="zone-label">Shelf</span>
+        <span class="zone-count" id="count-shelf">0</span>
+      </div>
+      <div class="zone-cards" data-zone="shelf"></div>
+    </section>
+
+    <!-- Zone 3: Out of Stock -->
+    <section class="zone-section" id="zone-out-of-stock">
+      <div class="zone-banner oos-banner">
+        <span class="zone-label">Out of Stock</span>
+        <span class="zone-count" id="count-out-of-stock">0</span>
+      </div>
+      <div class="zone-cards" data-zone="out-of-stock"></div>
+    </section>
+
+    <!-- =============================================
+         EXTRA DROP ZONES
+         Restock and Delete sit side by side below
+         the three main zones. Drag a card here.
+         ============================================= -->
+    <div class="extra-zones">
+
+      <div class="restock-area" id="restock-area">
+        <span class="extra-icon">&#8679;</span>
+        Drag here to Restock
+      </div>
+
+      <div class="trash-area" id="trash-area">
+        <span class="extra-icon">&#128465;</span>
+        Drag here to Delete
+      </div>
+
+    </div>
+
+  </main>
+
+
+  <!-- =============================================
+       MODAL — ADD / EDIT PRODUCT
+       Hidden by default. JS adds the "open" class
+       to show it. Clicking the dark backdrop or
+       pressing Escape will close it.
+       ============================================= -->
+  <div class="modal-overlay" id="modal-overlay">
+    <div class="modal">
+
+      <div class="modal-header">
+        <h2 id="modal-title">Add Product</h2>
+        <button class="modal-close" id="modal-close" type="button">&#10005;</button>
+      </div>
+
+      <form id="product-form">
+
+        <div class="form-group">
+          <label for="field-name">Product Name</label>
+          <input type="text" id="field-name" placeholder="e.g. Canned Tuna" autocomplete="off" />
+        </div>
+
+        <div class="form-group">
+          <label for="field-price">Price (&#8369;)</label>
+          <input type="number" id="field-price" placeholder="0.00" min="0" step="0.01" />
+        </div>
+
+        <div class="form-group">
+          <label for="field-qty">Quantity</label>
+          <input type="number" id="field-qty" placeholder="0" min="0" />
+        </div>
+
+        <div class="form-group">
+          <label for="field-threshold">Show Low Stock Alert When Below</label>
+          <input type="number" id="field-threshold" placeholder="5" min="0" />
+        </div>
+
+        <div class="form-group">
+          <label for="field-zone">Place In Zone</label>
+          <select id="field-zone">
+            <option value="storage">Storage</option>
+            <option value="shelf">Shelf</option>
+            <option value="out-of-stock">Out of Stock</option>
+          </select>
+        </div>
+
+        <p class="form-error" id="form-error"></p>
+
+        <div class="form-actions">
+          <button type="button" class="btn-cancel" id="btn-cancel">Cancel</button>
+          <button type="submit" class="btn-submit" id="btn-submit">Add Product</button>
+        </div>
+
+      </form>
+    </div>
+  </div>
+
+
+  <script src="app.js"></script>
+</body>
+</html>
