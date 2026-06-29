@@ -35,6 +35,7 @@ No installation, no dependencies.
 1. Download or clone the repository
 2. Open `index.html` in any modern browser (Chrome, Firefox, Edge)
 3. That's it
+4. Or you can also Visit https://cozycodingwastaken.github.io/Smart-Inventory-Restock-System/
 
 ---
 
