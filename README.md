@@ -1,6 +1,13 @@
 # Smart Inventory Restocking System
 **Sari-Sari Store ni Badong**
 
+Members:
+Jerwin Anacion
+Nathan Badango
+Elidan Fuertes
+Ronn Christian Rodillo
+
+
 An inventory restocking system made by students of **Holy Trinity University** for their **Event Driven Programming** class.
 
 A web app for managing inventory in a Filipino Sari-Sari convenience store. Products are organized into zones using drag-and-drop, with automatic low-stock alerts and full localStorage persistence.
