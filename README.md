@@ -1,7 +1,7 @@
 # Smart Inventory Restocking System
 **Sari-Sari Store ni Badong**
 
-Members:
+Members:\
 Jerwin Anacion\
 Nathan Badango\
 Elidan Fuertes\
