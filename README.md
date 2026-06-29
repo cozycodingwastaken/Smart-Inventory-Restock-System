@@ -54,7 +54,7 @@ No installation, no dependencies.
 ```
 Sari-Sari Store/
 ├── index.html          Page layout and structure
-├── style.css           All visual styling (flat design, Flexbox)
+├── style.css           All visual styling
 ├── app.js              All JavaScript logic (no frameworks)
 ```
 
