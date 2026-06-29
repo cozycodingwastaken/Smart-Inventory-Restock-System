@@ -2,9 +2,9 @@
 **Sari-Sari Store ni Badong**
 
 Members:
-Jerwin Anacion
-Nathan Badango
-Elidan Fuertes
+Jerwin Anacion\
+Nathan Badango\
+Elidan Fuertes\
 Ronn Christian Rodillo
 
 
